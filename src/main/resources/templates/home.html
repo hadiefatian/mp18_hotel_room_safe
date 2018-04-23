@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" th:href="@{/}"> Security Layer</a>
+            <ul class="nav">
+                <li><a th:href="@{/}" href="home.html"> Home </a></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Home</h1>
+    <p>I have nothing here!!!</p>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
+</body>
+</html>
